@@ -27,7 +27,7 @@ const template = readFileSync(
 const {
   AppServerModuleNgFactory,
   LAZY_MODULE_MAP
-} = require('./dist/ssrtest-server/main.bundle');
+} = require('./dist/ssrtest-server/main');
 
 const {
   provideModuleMap

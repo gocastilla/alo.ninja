@@ -8,7 +8,7 @@ import { join } from 'path';
 const {
   AppServerModuleNgFactory,
   LAZY_MODULE_MAP
-} = require('./ssrtest-server/main.bundle');
+} = require('./ssrtest-server/main');
 const DISABLE_FIREBASE = process.env.DISABLE_FIREBASE || false;
 
 // NgUniversalTools: Express Engine and moduleMap for lazy loading

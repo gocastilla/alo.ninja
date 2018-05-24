@@ -169,9 +169,9 @@
   dependencies:
     tslib "^1.9.0"
 
-"@angular/platform-server@^6.0.0":
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/@angular/platform-server/-/platform-server-6.0.2.tgz#d9f941a56b560763edc7232cc09e60ccd8d23b2b"
+"@angular/platform-server@^6.0.2":
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/@angular/platform-server/-/platform-server-6.0.3.tgz#ed24da82764cc298e8c15311fb7dcfa170a94ce5"
   dependencies:
     domino "^2.0.1"
     tslib "^1.9.0"
@@ -197,6 +197,14 @@
     "@angular-devkit/core" "0.6.3"
     tree-kill "^1.0.0"
     webpack-sources "^1.1.0"
+
+"@nguniversal/express-engine@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@nguniversal/express-engine/-/express-engine-6.0.0.tgz#f8bc7b5e940afb1ffdbdcb1bb22665d440ea0b0b"
+
+"@nguniversal/module-map-ngfactory-loader@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@nguniversal/module-map-ngfactory-loader/-/module-map-ngfactory-loader-6.0.0.tgz#0dd26c3f1c26d17bb21b8dfc0da53d82b7f11028"
 
 "@nodelib/fs.stat@^1.0.1":
   version "1.0.2"
@@ -4802,6 +4810,10 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
+material@^0.2.6:
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/material/-/material-0.2.6.tgz#68841ad155e99b4826641be26bb891b2a86bab70"
+
 math-random@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/math-random/-/math-random-1.0.1.tgz#8b3aac588b8a66e4975e3cdea67f7bb329601fac"
@@ -6448,6 +6460,12 @@ rxjs@^6.0.0:
   dependencies:
     tslib "^1.9.0"
 
+rxjs@^6.1.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.2.0.tgz#e024d0e180b72756a83c2aaea8f25423751ba978"
+  dependencies:
+    tslib "^1.9.0"
+
 safe-buffer@5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/safe-buffer/-/safe-buffer-5.1.1.tgz#893312af69b2123def71f57889001671eeb2c853"
@@ -6568,7 +6586,7 @@ semver-intersect@^1.1.2:
   dependencies:
     semver "^5.0.0"
 
-"semver@2 >=2.2.1 || 3.x || 4 || 5", "semver@2 || 3 || 4 || 5", semver@^5.0.0, semver@^5.1.0, semver@^5.3.0, semver@^5.5.0:
+"semver@2 >=2.2.1 || 3.x || 4 || 5", "semver@2 || 3 || 4 || 5", semver@^5.0.0, semver@^5.0.1, semver@^5.1.0, semver@^5.3.0, semver@^5.5.0:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.5.0.tgz#dc4bbc7a6ca9d916dee5d43516f0092b58f7b8ab"
 
@@ -7313,6 +7331,16 @@ trim-right@^1.0.1:
   resolved "https://registry.yarnpkg.com/true-case-path/-/true-case-path-1.0.2.tgz#7ec91130924766c7f573be3020c34f8fdfd00d62"
   dependencies:
     glob "^6.0.4"
+
+ts-loader@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-4.3.0.tgz#4e3ba172783d1256d3a23bdfadde011a795fae9e"
+  dependencies:
+    chalk "^2.3.0"
+    enhanced-resolve "^4.0.0"
+    loader-utils "^1.0.2"
+    micromatch "^3.1.4"
+    semver "^5.0.1"
 
 ts-node@~5.0.1:
   version "5.0.1"
