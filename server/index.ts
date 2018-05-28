@@ -15,7 +15,7 @@ const DISABLE_FIREBASE = process.env.DISABLE_FIREBASE || false;
 import { ngExpressEngine } from '@nguniversal/express-engine';
 import { provideModuleMap } from '@nguniversal/module-map-ngfactory-loader';
 
-// import * as firebaseFunctions from 'firebase-functions';
+import * as firebaseFunctions from 'firebase-functions';
 
 // Faster server renders w/ Prod mode (dev mode never needed)
 enableProdMode();
@@ -51,6 +51,6 @@ if (DISABLE_FIREBASE) {
 }
 
 
-// export let ssr = DISABLE_FIREBASE
-//   ? null
-//   : firebaseFunctions.https.onRequest(app);
+export let ssr = DISABLE_FIREBASE
+  ? null
+  : firebaseFunctions.https.onRequest(app);
