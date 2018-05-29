@@ -10,15 +10,15 @@ export class AppService {
       description: `Hodor. Hodor hodor... Hodor hodor hodor hodor. Hodor, hodor. Hodor. Hodor, hodor, hodor. Hodor hodor?! Hodor, hodor. Hodor. Hodor, hodor - hodor hodor! Hodor, hodor, hodor. Hodor hodor hodor. Hodor. Hodor hodor - hodor... Hodor hodor hodor hodor; hodor hodor? Hodor. Hodor HODOR hodor, hodor hodor... Hodor hodor hodor; hodor hodor?! Hodor hodor - hodor hodor; hodor hodor; hodor hodor? Hodor hodor - hodor hodor... Hodor hodor hodor hodor. Hodor. Hodor hodor HODOR! Hodor HODOR hodor, hodor hodor - hodor hodor! Hodor hodor HODOR! Hodor hodor, hodor. Hodor hodor; hodor hodor; hodor hodor - hodor, hodor, hodor hodor.`,
       socialLinks: [
         {
-          icon: 'fab fa-twitter',
+          icon: 'fa-svg fa-twitter',
           link: 'https://twitter.com/aloDev'
         },
         {
-          icon: 'fab fa-github',
+          icon: 'fa-svg fa-github',
           link: 'https://github.com/alo'
         },
         {
-          icon: 'fab fa-linkedin-in',
+          icon: 'fa-svg fa-linkedin',
           link: 'https://www.linkedin.com/in/alodev/'
         }
       ],
@@ -29,15 +29,15 @@ export class AppService {
           imgSrc: 'assets/coderty-logo.png',
           socialLinks: [
             {
-              icon: 'fab fa-twitter',
+              icon: 'fa-svg fa-twitter',
               link: 'https://twitter.com/aloDev'
             },
             {
-              icon: 'fab fa-github',
+              icon: 'fa-svg fa-github',
               link: 'https://github.com/alo'
             },
             {
-              icon: 'fab fa-linkedin-in',
+              icon: 'fa-svg fa-linkedin',
               link: 'https://www.linkedin.com/in/alodev/'
             }
           ]
@@ -48,15 +48,15 @@ export class AppService {
           imgSrc: 'assets/coderty-logo.png',
           socialLinks: [
             {
-              icon: 'fab fa-twitter',
+              icon: 'fa-svg fa-twitter',
               link: 'https://twitter.com/aloDev'
             },
             {
-              icon: 'fab fa-github',
+              icon: 'fa-svg fa-github',
               link: 'https://github.com/alo'
             },
             {
-              icon: 'fab fa-linkedin-in',
+              icon: 'fa-svg fa-linkedin',
               link: 'https://www.linkedin.com/in/alodev/'
             }
           ]
@@ -67,15 +67,15 @@ export class AppService {
           imgSrc: 'assets/coderty-logo.png',
           socialLinks: [
             {
-              icon: 'fab fa-twitter',
+              icon: 'fa-svg fa-twitter',
               link: 'https://twitter.com/aloDev'
             },
             {
-              icon: 'fab fa-github',
+              icon: 'fa-svg fa-github',
               link: 'https://github.com/alo'
             },
             {
-              icon: 'fab fa-linkedin-in',
+              icon: 'fa-svg fa-linkedin',
               link: 'https://www.linkedin.com/in/alodev/'
             }
           ]
