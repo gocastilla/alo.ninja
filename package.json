@@ -11,7 +11,8 @@
     "tsc:server": "tsc -p server/tsconfig.ssr.json",
     "build:u": "ng build --prod && ng run ssrtest:server",
     "serve:u": "DISABLE_FIREBASE=true node dist/index.js",
-    "webpack:server": "webpack --config webpack.server.config.js --progress --colors"
+    "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
+    "serve:firebase": "firebase serve --only functions,hosting"
   },
   "private": true,
   "dependencies": {
@@ -20,6 +21,7 @@
     "@angular/common": "^6.0.0",
     "@angular/compiler": "^6.0.0",
     "@angular/core": "^6.0.0",
+    "@angular/flex-layout": "^6.0.0-beta.15",
     "@angular/forms": "^6.0.0",
     "@angular/http": "^6.0.0",
     "@angular/material": "^6.1.0",

@@ -1,20 +1,38 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppComponent } from './app.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import {
+  MatButtonModule,
+  MatCardModule,
+  MatCheckboxModule,
+  MatIconModule
+} from '@angular/material';
+import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCheckboxModule, MatCardModule } from '@angular/material';
+import { AppComponent } from './app.component';
+import { DescriptionComponent } from './components/description/description.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { SocialLinksComponent } from './components/social-links/social-links.component';
+import { AppService } from './app.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    DescriptionComponent,
+    ProjectsComponent,
+    SocialLinksComponent
+  ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
+    FlexLayoutModule,
+    HttpClientModule,
+    MatCardModule,
     MatButtonModule,
     MatCheckboxModule,
-    MatCardModule
+    MatIconModule
   ],
-  providers: [],
+  providers: [AppService],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
