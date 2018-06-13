@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "test-angular-app-fcb01"
+    "default": "test-angular-app-fcb01",
+    "ninja": "alo-ninja"
   }
 }

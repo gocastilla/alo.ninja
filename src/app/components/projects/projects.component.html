@@ -9,15 +9,14 @@
       
       <mat-card class="card-margin">
         <mat-card-header>
-          <mat-card-title>Coderty</mat-card-title>
-          <mat-card-subtitle>Yes, we do!</mat-card-subtitle>
+          <mat-card-title>{{project.title}}</mat-card-title>
+          <mat-card-subtitle>{{project.subtitle}}</mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
-          <div style="width: 100%; text-align: center;">
-            <img matCardImage style="width: 200px; margin: 0px" src="assets/coderty-logo.png" alt="logo coderty">
+          <div style="width: 100%; height: 200px; text-align: center;">
+            <img matCardImage style="width: 200px; margin: 0px" [src]="project.imgSrc" [alt]="project.imgAlt">
           </div>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi reprehenderit ipsa porro dolorum libero nobis, architecto
-          non voluptate! Ex non consequuntur sed quasi eos explicabo et libero sint veniam unde.
+          {{project.desc}}
         </mat-card-content>
         <mat-card-actions align="end">
           <alo-social-links [socialLinks]="project.socialLinks"></alo-social-links>
