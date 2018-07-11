@@ -29,7 +29,7 @@ export class AppService {
         {
           title: 'Coderty',
           subtitle: 'Yes, we do!',
-          desc: `CODERTY es la respuesta tecnológica a todo aquello que imaginas, ideas o proyectas. Creamos soluciones a medida adaptando las últimas tecnologías a tus necesidades. Convertimos tus sueños en innovación.`,
+          desc: `CODERTY es una empresa de desarrollo de software. Es la respuesta tecnológica a todo aquello que imaginas, ideas o proyectas. Creamos soluciones a medida adaptando las últimas tecnologías a tus necesidades. WE ENJOY SOFTWARE!`,
           imgSrc: 'assets/coderty-logo.png',
           imgAlt: 'Logo Coderty',
           socialLinks: [
@@ -59,22 +59,22 @@ export class AppService {
           imgAlt: 'Logo runnerty',
           socialLinks: [
             {
+              icon: 'fa-svg fa-earth',
+              link: 'http://runnerty.io'
+            },
+            {
               icon: 'fa-svg fa-twitter',
               link: 'https://twitter.com/aloDev'
             },
             {
               icon: 'fa-svg fa-github',
               link: 'https://github.com/alo'
-            },
-            {
-              icon: 'fa-svg fa-linkedin',
-              link: 'https://www.linkedin.com/in/alodev/'
             }
           ]
         },
         {
           title: 'AlmeríaJS',
-          desc: `Grupo interesado en el desarrollo de aplicaciones usando Javascript. Cualquier framework (de los muchos que hay) es válido. No solo hablamos de los frameworks en sí, sino cualquier proyecto open source desarrollado con JS!`,
+          desc: `Grupo local de desarrolladores web. Cualquier framework Javascript (de los muchos que hay) es válido. No solo hablamos de los frameworks en sí, sino cualquier proyecto de sorftware libre (OSS) desarrollado con JS!`,
           imgSrc: 'assets/almeriajs.png',
           subtitle: 'Angular Almeria friends',
           imgAlt: 'Logo AlmeriaJS',
@@ -94,7 +94,7 @@ export class AppService {
           ]
         }
       ],
-      title: 'Web Álvaro Quirós',
+      title: 'Álvaro Quirós',
       meta: [
         {
           name: 'author',
@@ -115,7 +115,7 @@ export class AppService {
         },
         {
           property: 'og:title',
-          content: 'Web Álvaro Quirós'
+          content: 'Álvaro Quirós'
         },
         {
           property: 'og:description',
@@ -136,7 +136,7 @@ export class AppService {
         },
         {
           name: 'twitter:title',
-          content: 'Web Álvaro Quirós'
+          content: 'Álvaro Quirós'
         },
         {
           name: 'twitter:description',
