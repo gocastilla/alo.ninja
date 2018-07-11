@@ -23,6 +23,11 @@ export class AppService {
         {
           icon: 'fa-svg fa-linkedin',
           link: 'https://www.linkedin.com/in/alodev/'
+        },
+        {
+          icon: 'fa-svg fa-instagram',
+          link: 'https://www.instagram.com/alo360/',
+          advice: true
         }
       ],
       projects: [

@@ -1,0 +1,18 @@
+<h1 mat-dialog-title>Solo una cosa antes ...</h1>
+<div mat-dialog-content>
+  <p>Vas a acceder una cuenta
+    <b>personal</b>, donde verás una mezcla entre trabajo, familia, amigos, hobbies, ... </p>
+</div>
+<div mat-dialog-actions
+  flex
+  align="end">
+  <button mat-button
+    (click)="onNoClick()">No, gracias</button>
+  <a mat-button
+    cdkFocusInitial
+    [href]="data.link"
+    target="_blank"
+    color="primary"
+    rel="noopener"
+    aria-label="enlace social"> ¡Vale! </a>
+</div>

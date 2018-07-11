@@ -1,10 +1,20 @@
-<span class="social-links" *ngFor="let socialLink of socialLinks">
-  <a mat-icon-button
-    [href]="socialLink.link"
-    target="_blank"
-    color="primary"
-    rel="noopener"
+<span class="social-links"
+  *ngFor="let socialLink of socialLinks">
+  <a *ngIf="socialLink.advice; else regularLink"
+    (click)="openDialog(socialLink.link)"
+    mat-icon-button
     aria-label="enlace social">
     <i [class]="socialLink.icon"></i>
   </a>
+  <ng-template #regularLink>
+    <a *ngIf="socialLink"
+      mat-icon-button
+      [href]="socialLink.link"
+      target="_blank"
+      color="primary"
+      rel="noopener"
+      aria-label="enlace social">
+      <i [class]="socialLink.icon"></i>
+    </a>
+  </ng-template>
 </span>
