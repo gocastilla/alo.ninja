@@ -3,10 +3,11 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class AppService {
-  constructor(private http: HttpClient) {}
+  constructor() {}
 
   getData() {
     return {
+      name:'Álvaro Quirós',
       description: `Web Developer desde que conocí los “encantos” de JQuery. Frontend lead en Coderty, proyecto que desde hace unos años es mi vida y mi oficina, y donde Angular ocupa un espacio central, abarcando proyectos de todo tipo de envergadura.
       Amante del deporte, los animales y las comunidades de aprendizaje en la que poder aportar y obtener conocimiento. Organizador de Angular Almería y AlmeríaJS.
       Habitante de Almería por necesidad vital y paisaje lunar, aunque viajante inquieto para poder comparar.`,
@@ -100,14 +101,14 @@ export class AppService {
         }
       ],
       title: 'Álvaro Quirós',
-      meta: [
+      metas: [
         {
           name: 'author',
           content: 'Álvaro Quirós'
         },
         {
           name: 'keywords',
-          content: 'angular, almeria, seo, friendly, desarrollo, web'
+          content: 'angular, almeria, seo, friendly, desarrollo, web, angularjs'
         },
         {
           name: 'description',

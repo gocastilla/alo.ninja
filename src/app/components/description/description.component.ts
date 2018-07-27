@@ -6,6 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./description.component.sass']
 })
 export class DescriptionComponent {
+  @Input() name;
   @Input() mainDescription;
   @Input() position;
   @Input() socialLinks;
