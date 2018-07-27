@@ -11,7 +11,6 @@
     "tsc:server": "tsc -p server/tsconfig.ssr.json",
     "build:u": "ng build --prod && ng run ssrtest:server && mv dist/ssrtest/index.html dist/ssrtest/index-1.html ",
     "serve:u": "DISABLE_FIREBASE=true node dist/index.js",
-    "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
     "serve:firebase": "firebase serve --only functions,hosting"
   },
   "private": true,
