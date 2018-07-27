@@ -16,6 +16,8 @@ import { SocialLinksComponent } from './components/social-links/social-links.com
 import { ConfirmDialog } from './components/confirm-dialog/confirm-dialog.component';
 import { AppService } from './app.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { HttpClientModule } from '@angular/common/http';
     MatButtonModule,
     MatCheckboxModule,
     MatIconModule,
-    MatDialogModule
+    MatDialogModule,
+    ServiceWorkerModule.register('/ngsw-worker.js', { enabled: environment.production })
   ],
   entryComponents: [ConfirmDialog],
   providers: [AppService],

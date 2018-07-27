@@ -23,12 +23,14 @@
     "@angular/platform-browser": "6.0.7",
     "@angular/platform-browser-dynamic": "6.0.7",
     "@angular/platform-server": "6.0.7",
+    "@angular/pwa": "0.6.8",
     "@nguniversal/express-engine": "6.0.0",
     "@nguniversal/module-map-ngfactory-loader": "6.0.0",
     "reflect-metadata": "^0.1.12",
     "express": "^4.16.3",
     "rxjs": "^6.1.0",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.26",
+    "@angular/service-worker": "6.0.7"
   },
   "private": true
 }
