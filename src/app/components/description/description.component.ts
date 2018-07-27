@@ -9,6 +9,7 @@ export class DescriptionComponent {
   @Input() name;
   @Input() mainDescription;
   @Input() position;
+  @Input() profilePic;
   @Input() socialLinks;
 
   constructor() {}
