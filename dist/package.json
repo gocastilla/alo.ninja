@@ -26,6 +26,8 @@
     "@angular/pwa": "0.6.8",
     "@nguniversal/express-engine": "6.0.0",
     "@nguniversal/module-map-ngfactory-loader": "6.0.0",
+    "cookieconsent": "^3.1.0",
+    "ngx-cookieconsent": "^2.0.0",
     "reflect-metadata": "^0.1.12",
     "express": "^4.16.3",
     "rxjs": "^6.1.0",
