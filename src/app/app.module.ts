@@ -61,7 +61,7 @@ const cookieConfig:NgcCookieConsentConfig = {
     MatCheckboxModule,
     MatIconModule,
     MatDialogModule,
-    ServiceWorkerModule.register('/ngsw-worker.js', {
+    ServiceWorkerModule.register('./ngsw-worker.js', {
       enabled: environment.production
     }),
     NgcCookieConsentModule.forRoot(cookieConfig)
