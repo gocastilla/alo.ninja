@@ -83,7 +83,7 @@ export class AppService {
         },
         {
           title: 'AlmeríaJS',
-          desc: `Grupo local de desarrolladores web. Cualquier framework Javascript (de los muchos que hay) es válido. No solo hablamos de los frameworks en sí, sino cualquier proyecto de sorftware libre (OSS) desarrollado con JS!`,
+          desc: `Grupo local de desarrolladores web. Cualquier framework Javascript (de los muchos que hay) es válido. No solo hablamos de los frameworks en sí, sino cualquier proyecto de sorftware libre (OSS) desarrollado con JS! Y cerveza, la verdad.`,
           imgSrc: 'assets/almeriajs.png',
           subtitle: 'Angular Almeria friends',
           imgAlt: 'Logo AlmeriaJS',

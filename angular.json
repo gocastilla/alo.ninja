@@ -112,7 +112,7 @@
           }
         },
         "server": {
-          "builder": "@angular-devkit/build-angular:server",
+          "builder": "@angular-devkit/build-angular:server:production",
           "options": {
             "outputPath": "dist/ssrtest-server",
             "main": "src/main.server.ts",
