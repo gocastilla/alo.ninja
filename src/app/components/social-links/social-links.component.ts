@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { ConfirmDialog } from '../confirm-dialog/confirm-dialog.component';
 import { MatDialog, MatDialogRef } from '@angular/material';
+import { Link } from 'src/app/models/link.interface';
 
 @Component({
   selector: 'alo-social-links',
@@ -8,7 +9,7 @@ import { MatDialog, MatDialogRef } from '@angular/material';
   styleUrls: ['./social-links.component.sass']
 })
 export class SocialLinksComponent {
-  @Input() socialLinks;
+  @Input() socialLinks: Link[];
   constructor(public dialog: MatDialog) {}
 
   confirmDialog: MatDialogRef<ConfirmDialog>;

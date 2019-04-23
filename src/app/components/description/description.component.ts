@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { ProfilePic } from 'src/app/models/profile-pic.interface';
+import { Link } from 'src/app/models/link.interface';
 
 @Component({
   selector: 'alo-description',
@@ -6,11 +8,11 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./description.component.sass']
 })
 export class DescriptionComponent {
-  @Input() name;
-  @Input() mainDescription;
-  @Input() position;
-  @Input() profilePic;
-  @Input() socialLinks;
+  @Input() name: string;
+  @Input() mainDescription: string;
+  @Input() position: string;
+  @Input() profilePic: ProfilePic;
+  @Input() socialLinks: Link[];
 
   constructor() {}
 }
