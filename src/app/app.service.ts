@@ -7,9 +7,9 @@ export class AppService {
   getData() {
     return {
       name: 'Álvaro Quirós',
-      description: `Web Developer desde que conocí los “encantos” de JQuery. <b>Frontend lead en Coderty</b>, proyecto que desde hace unos años es mi vida y mi oficina, y donde Angular ocupa un espacio central, abarcando proyectos de todo tipo de envergadura.
-      Amante del deporte, los animales y las comunidades de aprendizaje en la que poder aportar y obtener conocimiento. Organizador de Angular Almería y AlmeríaJS.
-      Habitante de Almería por necesidad vital y paisaje lunar, aunque viajante inquieto para poder comparar.`,
+      description: `Disfrutando como Desarrollador de Software desde hace 10 años. Siempre muy cerca de la Web, hace algo más de 5 años 
+      decidí apostar por Javascript con NodeJS y Angular como mis herramientas principales. Frontend Lead en Coderty, organizador 
+      de Angular Almería y AlmeríaJS, speaker y organizador de NGSpain. Viajero inquieto y amante de los animales.`,
       position: 'Frontend Lead Coderty',
       profilePic: {
         src: 'assets/profile.jpg',
@@ -38,7 +38,7 @@ export class AppService {
         {
           title: 'Coderty',
           subtitle: 'Yes, we do!',
-          desc: `CODERTY es una empresa de desarrollo de software. Es la respuesta tecnológica a todo aquello que imaginas, ideas o proyectas. Creamos soluciones a medida adaptando las últimas tecnologías a tus necesidades. WE ENJOY SOFTWARE!`,
+          desc: `CODERTY es una empresa de desarrollo de software. Es la respuesta tecnológica a todo aquello que imaginas, ideas o proyectas. Creamos soluciones a medida adaptando las últimas tecnologías a tus necesidades. WE <b>#ENJOY</b> SOFTWARE!`,
           imgSrc: 'assets/coderty-logo.png',
           imgAlt: 'Logo Coderty',
           socialLinks: [
@@ -82,6 +82,27 @@ export class AppService {
           ]
         },
         {
+          title: 'NGSpain',
+          subtitle: 'Madrid. October 19-20, 2019',
+          desc: `Una conferencia Angular sin ánimo de lucro y dirigida por la comunidad. Los organizadores son muy activos dentro de la comunidad Angular. El objetivo es crear un evento acogedor que esté abierto para todos los que deseen asistir.`,
+          imgSrc: 'assets/ngspain.png',
+          imgAlt: 'Logo NGSpain',
+          socialLinks: [
+            {
+              icon: 'fa-svg fa-earth',
+              link: 'https://ngspain.com'
+            },
+            {
+              icon: 'fa-svg fa-twitter',
+              link: 'https://twitter.com/ngspain'
+            },
+            {
+              icon: 'fa-svg fa-github',
+              link: 'https://github.com/ngspain'
+            }
+          ]
+        },
+        {
           title: 'AlmeríaJS',
           desc: `Grupo local de desarrolladores web. Cualquier framework Javascript (de los muchos que hay) es válido. No solo hablamos de los frameworks en sí, sino cualquier proyecto de sorftware libre (OSS) desarrollado con JS! Y cerveza, la verdad.`,
           imgSrc: 'assets/almeriajs.png',
@@ -116,7 +137,7 @@ export class AppService {
         {
           name: 'description',
           content:
-            'Frontend lead en Coderty, donde Angular ocupa un espacio central. Quién soy y cómo he llegado hasta aquí es importante para saber de qué manera podemos colaborar. Implementar Angular en proyectos grandes y colaborar con otros equipos de desarrollo es lo que más me apasiona!'
+            'Frontend lead en Coderty, donde Angular ocupa un espacio central. Speaker, organizer & mentor. '
         },
         {
           name: 'copyright',
@@ -129,7 +150,7 @@ export class AppService {
         {
           property: 'og:description',
           content:
-            'Frontend lead en Coderty, donde Angular ocupa un espacio central. Quién soy y cómo he llegado hasta aquí es importante para saber de qué manera podemos colaborar. Implementar Angular en proyectos grandes y colaborar con otros equipos de desarrollo es lo que más me apasiona!'
+            'Frontend lead en Coderty, donde Angular ocupa un espacio central. Speaker, organizer & mentor. '
         },
         {
           property: 'og:image',
@@ -150,7 +171,7 @@ export class AppService {
         {
           name: 'twitter:description',
           content:
-            'Frontend lead en Coderty, donde Angular ocupa un espacio central. Quién soy y cómo he llegado hasta aquí es importante para saber de qué manera podemos colaborar. Implementar Angular en proyectos grandes y colaborar con otros equipos de desarrollo es lo que más me apasiona!'
+            'Frontend lead en Coderty, donde Angular ocupa un espacio central. Speaker, organizer & mentor. '
         },
         {
           name: 'twitter:image',
