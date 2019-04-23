@@ -1,4 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Project } from '../../models/project.interface';
+
 
 @Component({
   selector: 'alo-projects',
@@ -6,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./projects.component.sass']
 })
 export class ProjectsComponent {
-  @Input() projects;
+  @Input() projects: Project[];
 
   constructor() {}
 }

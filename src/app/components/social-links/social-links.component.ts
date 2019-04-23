@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
-import { ConfirmDialog } from '../confirm-dialog/confirm-dialog.component';
 import { MatDialog, MatDialogRef } from '@angular/material';
-import { Link } from 'src/app/models/link.interface';
+import { ConfirmDialog } from '../confirm-dialog/confirm-dialog.component';
+import { Link } from '../../models/link.interface';
 
 @Component({
   selector: 'alo-social-links',
@@ -14,7 +14,7 @@ export class SocialLinksComponent {
 
   confirmDialog: MatDialogRef<ConfirmDialog>;
 
-  openDialog(link): void {
+  openDialog(link: Link): void {
     this.confirmDialog = this.dialog.open(ConfirmDialog, {
       width: '350px',
       data:{
