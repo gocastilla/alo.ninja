@@ -1,15 +1,18 @@
 import { Injectable } from '@angular/core';
+import { MainDescription } from './models/main-description.interface';
 
 @Injectable()
 export class AppService {
   constructor() {}
 
-  getData() {
+  getData(): MainDescription {
     return {
       name: 'Álvaro Quirós',
-      description: `Disfrutando como Desarrollador de Software desde hace 10 años. Siempre muy cerca de la Web, hace algo más de 5 años 
-      decidí apostar por Javascript con NodeJS y Angular como mis herramientas principales. Frontend Lead en Coderty, organizador 
-      de Angular Almería y AlmeríaJS, speaker y organizador de NGSpain. Viajero inquieto y amante de los animales.`,
+      description:
+        'Disfrutando como Desarrollador de Software desde hace 10 años. Siempre muy cerca de la Web, ' +
+        'hace algo más de 5 años decidí apostar por Javascript con NodeJS y Angular como mis herramientas principales. ' +
+        'Frontend Lead en Coderty, organizador de Angular Almería y AlmeríaJS, speaker y organizador de NGSpain. Viajero inquieto ' +
+        'y amante de los animales.',
       position: 'Frontend Lead Coderty',
       profilePic: {
         src: 'assets/profile.jpg',
@@ -38,7 +41,10 @@ export class AppService {
         {
           title: 'Coderty',
           subtitle: 'Yes, we do!',
-          desc: `CODERTY es una empresa de desarrollo de software. Es la respuesta tecnológica a todo aquello que imaginas, ideas o proyectas. Creamos soluciones a medida adaptando las últimas tecnologías a tus necesidades. WE <b>#ENJOY</b> SOFTWARE!`,
+          desc:
+            'CODERTY es una empresa de desarrollo de software. Es la respuesta tecnológica a todo aquello que imaginas, ' +
+            'ideas o proyectas. Creamos soluciones a medida adaptando las últimas tecnologías a tus necesidades. ' +
+            'WE <b>#ENJOY</b> SOFTWARE!',
           imgSrc: 'assets/coderty-logo.png',
           imgAlt: 'Logo Coderty',
           socialLinks: [
@@ -62,7 +68,10 @@ export class AppService {
         },
         {
           title: 'Runnerty',
-          desc: `Herramienta de software libre escrita en NodeJS que te permite gestionar y planificar tus procesos. Céntrate en la lógica de negocio y olvídate de gestionar dependencias entre procesos, jobs, gestión de errores o notificaciones.`,
+          desc:
+            'Herramienta de software libre escrita en NodeJS que te permite gestionar y planificar tus procesos. ' +
+            'Céntrate en la lógica de negocio y olvídate de gestionar dependencias entre procesos, jobs, gestión de ' +
+            'errores o notificaciones.',
           subtitle: 'Process Orchestrator',
           imgSrc: 'assets/runnerty-logo2.png',
           imgAlt: 'Logo runnerty',
@@ -84,7 +93,9 @@ export class AppService {
         {
           title: 'NGSpain',
           subtitle: 'Madrid. October 19-20, 2019',
-          desc: `Una conferencia Angular sin ánimo de lucro y dirigida por la comunidad. Los organizadores son muy activos dentro de la comunidad Angular. El objetivo es crear un evento acogedor que esté abierto para todos los que deseen asistir.`,
+          desc:
+            'Una conferencia Angular sin ánimo de lucro y dirigida por la comunidad. Los organizadores son muy activos dentro ' +
+            'de la comunidad Angular. El objetivo es crear un evento acogedor que esté abierto para todos los que deseen asistir.',
           imgSrc: 'assets/ngspain.png',
           imgAlt: 'Logo NGSpain',
           socialLinks: [
@@ -104,7 +115,10 @@ export class AppService {
         },
         {
           title: 'AlmeríaJS',
-          desc: `Grupo local de desarrolladores web. Cualquier framework Javascript (de los muchos que hay) es válido. No solo hablamos de los frameworks en sí, sino cualquier proyecto de sorftware libre (OSS) desarrollado con JS! Y cerveza, la verdad.`,
+          desc:
+            'Grupo local de desarrolladores web. Cualquier framework Javascript (de los muchos que hay) es válido. ' +
+            'No solo hablamos de los frameworks en sí, sino cualquier proyecto de sorftware libre (OSS) desarrollado con JS! ' +
+            'Y cerveza, la verdad.',
           imgSrc: 'assets/almeriajs.png',
           subtitle: 'Angular Almeria friends',
           imgAlt: 'Logo AlmeriaJS',
@@ -136,8 +150,7 @@ export class AppService {
         },
         {
           name: 'description',
-          content:
-            'Frontend lead en Coderty, donde Angular ocupa un espacio central. Speaker, organizer & mentor. '
+          content: 'Frontend lead en Coderty, donde Angular ocupa un espacio central. Speaker, organizer & mentor. '
         },
         {
           name: 'copyright',
@@ -149,8 +162,7 @@ export class AppService {
         },
         {
           property: 'og:description',
-          content:
-            'Frontend lead en Coderty, donde Angular ocupa un espacio central. Speaker, organizer & mentor. '
+          content: 'Frontend lead en Coderty, donde Angular ocupa un espacio central. Speaker, organizer & mentor. '
         },
         {
           property: 'og:image',
@@ -170,8 +182,7 @@ export class AppService {
         },
         {
           name: 'twitter:description',
-          content:
-            'Frontend lead en Coderty, donde Angular ocupa un espacio central. Speaker, organizer & mentor. '
+          content: 'Frontend lead en Coderty, donde Angular ocupa un espacio central. Speaker, organizer & mentor. '
         },
         {
           name: 'twitter:image',

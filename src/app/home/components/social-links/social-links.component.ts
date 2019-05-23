@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { MatDialog, MatDialogRef } from '@angular/material';
 import { ConfirmDialog } from '../confirm-dialog/confirm-dialog.component';
-import { Link } from '../../models/link.interface';
+import { Link } from '../../../models/link.interface';
 
 @Component({
   selector: 'alo-social-links',

@@ -2,7 +2,7 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../dist",  
-    "sourceMap": true,
+    "sourceMap": false,
     "baseUrl": "./",
     "module": "commonjs",
     "types":[
@@ -10,7 +10,7 @@
     ]
   },
   "files": [
-    "index.ts"
+    "prerender.ts"
   ],
   "exclude": [
     "**/*.test.ts",

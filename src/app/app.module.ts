@@ -1,26 +1,18 @@
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import {
-  MatButtonModule,
-  MatCardModule,
-  MatCheckboxModule,
-  MatIconModule,
-  MatDialogModule
-} from '@angular/material';
-import { BrowserModule } from '@angular/platform-browser';
+import { MatButtonModule, MatCardModule, MatCheckboxModule, MatIconModule, MatDialogModule } from '@angular/material';
+import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import { DescriptionComponent } from './components/description/description.component';
-import { ProjectsComponent } from './components/projects/projects.component';
-import { SocialLinksComponent } from './components/social-links/social-links.component';
-import { ConfirmDialog } from './components/confirm-dialog/confirm-dialog.component';
 import { AppService } from './app.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
-import {NgcCookieConsentModule, NgcCookieConsentConfig} from 'ngx-cookieconsent';
+import { NgcCookieConsentModule, NgcCookieConsentConfig } from 'ngx-cookieconsent';
+import { AppRoutingModule } from './app-routing.module';
+// import { HomeModule } from './home/home.module';
 
-const cookieConfig:NgcCookieConsentConfig = {
+const cookieConfig: NgcCookieConsentConfig = {
   cookie: {
     domain: 'alo.ninja'
   },
@@ -35,27 +27,23 @@ const cookieConfig:NgcCookieConsentConfig = {
   theme: 'edgeless',
   type: 'info',
   content: {
-    "message": "Este sitio web usa cookies para asegurarte la mejor experiencia de usuario.",
-    "dismiss": "OK!",
-    "deny": "Refuse cookies",
-    "link": "Learn more",
-    "href": "https://cookiesandyou.com"
+    message: 'Este sitio web usa cookies para asegurarte la mejor experiencia de usuario.',
+    dismiss: 'OK!',
+    deny: 'Refuse cookies',
+    link: 'Learn more',
+    href: 'https://cookiesandyou.com'
   }
 };
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    DescriptionComponent,
-    ProjectsComponent,
-    SocialLinksComponent,
-    ConfirmDialog
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
+    BrowserTransferStateModule,
     BrowserAnimationsModule,
-    FlexLayoutModule,
+    AppRoutingModule,
     HttpClientModule,
+    FlexLayoutModule,
     MatCardModule,
     MatButtonModule,
     MatCheckboxModule,
@@ -66,7 +54,6 @@ const cookieConfig:NgcCookieConsentConfig = {
     }),
     NgcCookieConsentModule.forRoot(cookieConfig)
   ],
-  entryComponents: [ConfirmDialog],
   providers: [AppService],
   bootstrap: [AppComponent]
 })

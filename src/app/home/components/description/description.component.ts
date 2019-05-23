@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import { ProfilePic } from '../../models/profile-pic.interface';
-import { Link } from '../../models/link.interface';
+import { ProfilePic } from '../../../models/profile-pic.interface';
+import { Link } from '../../../models/link.interface';
 
 @Component({
   selector: 'alo-description',

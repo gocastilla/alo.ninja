@@ -5,10 +5,7 @@ import * as express from 'express';
 import { join } from 'path';
 
 // NOTE: leave this as require() since this file is built Dynamically from webpack
-const {
-  AppServerModuleNgFactory,
-  LAZY_MODULE_MAP
-} = require('./ssrtest-server/main');
+const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('./ssrtest-server/main');
 const DISABLE_FIREBASE = process.env.DISABLE_FIREBASE || false;
 
 // NgUniversalTools: Express Engine and moduleMap for lazy loading
@@ -35,13 +32,19 @@ app.set('views', join(DIST_FOLDER, 'ssrtest-server'));
 
 if (DISABLE_FIREBASE) {
   // Server static files using the express server only if not using firebase hosting
-  app.get('*.*', express.static(join(DIST_FOLDER, 'ssrtest')));
+  app.get(
+    '*.*',
+    express.static(join(DIST_FOLDER, 'ssrtest'), {
+      maxAge: '1y'
+    })
+  );
 }
 
 // All regular routes use the Universal engine
 app.get('*', (req, res) => {
   res.render(join(DIST_FOLDER, 'ssrtest', 'index-1.html'), { req });
 });
+
 
 if (DISABLE_FIREBASE) {
   // Start up the Node server if not using firebase cloud functions
@@ -50,7 +53,4 @@ if (DISABLE_FIREBASE) {
   });
 }
 
-
-export let ssr = DISABLE_FIREBASE
-  ? null
-  : firebaseFunctions.https.onRequest(app);
+export let ssr = DISABLE_FIREBASE ? null : firebaseFunctions.https.onRequest(app);

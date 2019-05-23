@@ -1,26 +1,38 @@
 import 'zone.js/dist/zone-node';
-import * as functions from 'firebase-functions';
+import 'reflect-metadata';
 import * as express from 'express';
-import { renderModuleFactory } from '@angular/platform-server';
-import * as fs from 'fs';
-
 import { enableProdMode } from '@angular/core';
 
+import { ngExpressEngine } from '@nguniversal/express-engine';
+import { provideModuleMap } from '@nguniversal/module-map-ngfactory-loader';
+
+const { AppServerModuleNgFactory, LAZY_MODULE_MAP } = require('../dist/ssrtest-server/main');
 enableProdMode();
-
-const document = fs.readFileSync(__dirname + '/ssrtest/index-1.html', 'utf8');
-const AppServerModuleNgFactory = require(__dirname + '/ssrtest-server/main')
-  .AppServerModuleNgFactory;
-
 const app = express();
-app.get('**', (req, res) => {
-  const url = req.url;
-  renderModuleFactory(AppServerModuleNgFactory, { document, url }).then(
-    html => {
-      res.set('Cache-Control', 'public, max-age=600, s-maxage=1200');
-      res.send(html);
-    }
-  );
+const distFolder = __dirname + '/../dist/ssrtest';
+
+app.engine(
+  'html',
+  ngExpressEngine({
+    bootstrap: AppServerModuleNgFactory,
+    providers: [provideModuleMap(LAZY_MODULE_MAP)]
+  })
+);
+
+app.set('view engine', 'html');
+app.set('views', distFolder);
+
+app.get(
+  '*.*',
+  express.static(distFolder, {
+    maxAge: '1y'
+  })
+);
+
+app.get('*', (req, res) => {
+  res.render('index', { req });
 });
 
-export let ssr = functions.https.onRequest(app);
+app.listen(9000, () => {
+  console.log(`Angular Universal Node Express server listening on http://localhost:9000`);
+});
