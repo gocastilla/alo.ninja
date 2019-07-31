@@ -1,12 +1,14 @@
 import { Injectable } from '@angular/core';
 import { MainDescription } from './models/main-description.interface';
+import { of, Observable } from 'rxjs';
 
 @Injectable()
 export class AppService {
   constructor() {}
 
-  getData(): MainDescription {
-    return {
+  getData(): Observable<MainDescription> {
+    return of(
+      {
       name: 'Álvaro Quirós',
       description:
         'Disfrutando como Desarrollador de Software desde hace 10 años. Siempre muy cerca de la Web, ' +
@@ -193,6 +195,11 @@ export class AppService {
           content: 'summary_large_image'
         }
       ]
-    };
+    }
+    );
+  }
+
+  getAsyncData(): Observable<any> {
+    return of({ testaso: 'test' });
   }
 }
