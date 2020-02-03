@@ -17,6 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/ssrtest",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -34,6 +35,12 @@
           },
           "configurations": {
             "production": {
+              "budgets": [
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
+                }
+              ],
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -92,25 +99,6 @@
           "options": {
             "tsConfig": ["src/tsconfig.app.json", "src/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**"]
-          }
-        },
-        "server": {
-          "builder": "@angular-devkit/build-angular:server:production",
-          "options": {
-            "outputPath": "dist/ssrtest-server",
-            "main": "src/main.server.ts",
-            "tsConfig": "src/tsconfig.server.json"
-          },
-          "configurations": {
-            "production": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
-              "sourceMap": false
-            }
           }
         }
       }
