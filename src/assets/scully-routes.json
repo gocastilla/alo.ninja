@@ -1,1 +1,1 @@
-[{"route":"/home"}]
+[{"route":"/home"},{"route":"/projects"},{"route":"/projects/:projectId"}]

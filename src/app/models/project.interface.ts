@@ -1,6 +1,7 @@
-import { Link } from "./link.interface";
+import { Link } from './link.interface';
 
 export interface Project {
+  id: string;
   title: string;
   subtitle: string;
   desc: string;

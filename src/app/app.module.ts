@@ -15,6 +15,7 @@ import { environment } from '../environments/environment';
 import { NgcCookieConsentModule, NgcCookieConsentConfig } from 'ngx-cookieconsent';
 import { AppRoutingModule } from './app-routing.module';
 import { ScullyLibModule } from '@scullyio/ng-lib';
+import { PorjectComponent } from './project/containers/porject/porject.component';
 
 const cookieConfig: NgcCookieConsentConfig = {
   cookie: {
@@ -40,7 +41,7 @@ const cookieConfig: NgcCookieConsentConfig = {
 };
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, PorjectComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
