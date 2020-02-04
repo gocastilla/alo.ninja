@@ -1,1 +1,1 @@
-[{"route":"/home"},{"route":"/projects"},{"route":"/projects/:projectId"}]
+[{"route":"/home"},{"route":"/projects"},{"route":"/projects/:projectId"},{"route":"/blog/2020-02-04-blog","title":"2020-02-04-blog","description":"blog description","publish":false,"sourceFile":"2020-02-04-blog.md"},{"route":"/blog/this-is-my-post","title":"This is my post","description":"blog description","publish":false,"sourceFile":"this-is-my-post.md"}]
