@@ -1,6 +1,29 @@
-<router-outlet></router-outlet>
-<!-- <div class="container">
-  
+<div class="layout" fxLayout="column" fxLayoutAlign="start center">
+  <header>
+    <mat-toolbar color="primary">
+      <mat-toolbar-row fxLayout="row" fxLayoutGap="16px">
+        <div fxFlex>
+          <a mat-button routerLink="/">🍺 Alvaro Quirós</a>
+        </div>
+        <a mat-button routerLink="/">Inicio</a>
+        <a mat-button routerLink="/projects">Proyectos</a>
+        <a mat-button routerLink="/blog">Blog</a>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </header>
+
+  <main fxFlex>
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer>
+    <div>Copyright © 2020 Alvaro Quirós. Todos los derechos reservados.</div>
+  </footer>
+</div>
+
+<!--
+
+<div class="container">
   <alo-description 
     [name]="data?.name"
     [mainDescription]="data?.description"
@@ -10,5 +33,6 @@
   </alo-description>
   
   <alo-projects [projects]="data?.projects"></alo-projects>
+</div>
 
-</div> -->
+-->

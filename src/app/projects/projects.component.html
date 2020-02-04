@@ -1,0 +1,21 @@
+<h1 color="primary">
+  Listado de proyectos
+</h1>
+
+<div fxLayoutGap="16px grid" fxLayout="row wrap" fxLayout.lt-sm="column">
+  <a fxFlex="50" fxFlex.lt-sm="100" *ngFor="let project of projects" [routerLink]="project.id">
+    <mat-card>
+      <mat-card-content>
+        <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="16px">
+          <div>
+            <img [src]="project.imgSrc" alt="project.imgAlt" />
+          </div>
+          <div fxFlex>
+            <h3>{{ project.title }}</h3>
+            <h4>{{ project.subtitle }}</h4>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </a>
+</div>

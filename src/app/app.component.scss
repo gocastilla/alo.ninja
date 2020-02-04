@@ -1,0 +1,23 @@
+.layout {
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+}
+
+main {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1000px;
+  padding: 32px;
+}
+
+footer {
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  background-color: #e8e8e8;
+  padding: 24px;
+}

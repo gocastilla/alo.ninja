@@ -4,16 +4,8 @@ import { Project } from '../models/project.interface';
 
 @Component({
   selector: 'alo-projects',
-  template: `
-    <h1>
-      Listado de proyectos
-    </h1>
-
-    <ul *ngFor="let project of projects">
-      <li [routerLink]="project.id">{{ project.title }}</li>
-    </ul>
-  `,
-  styleUrls: ['./projects.component.css']
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
   projects: Project[];

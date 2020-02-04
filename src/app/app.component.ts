@@ -8,17 +8,16 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  constructor(
-    // private activatedRoute: ActivatedRoute,
-    // private appService: AppService,
-    // private meta: Meta,
-    // private title: Title,
-    // private ccService: NgcCookieConsentService
-    
-  ) {}
+  constructor() // private activatedRoute: ActivatedRoute,
+  // private appService: AppService,
+  // private meta: Meta,
+  // private title: Title,
+  // private ccService: NgcCookieConsentService
+
+  {}
 
   data: MainDescription;
 
@@ -32,6 +31,5 @@ export class AppComponent implements OnInit {
     //   this.title.setTitle(this.data.title);
     //   this.meta.addTags(this.data.metas);
     // });
-    
   }
 }
