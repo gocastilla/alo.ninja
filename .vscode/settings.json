@@ -1,7 +1,19 @@
 // Coloque su configuración en este archivo para sobrescribir la configuración predeterminada y de usuario.
 {
   "workbench.colorCustomizations": {
-    "titleBar.activeForeground": "#000000",
-    "titleBar.activeBackground": "#FDC42E"
-  }
+    "activityBar.background": "#fdd260",
+    "activityBar.activeBorder": "#029d73",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#029d73",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "titleBar.activeBackground": "#fdc42e",
+    "titleBar.inactiveBackground": "#fdc42e99",
+    "titleBar.activeForeground": "#15202b",
+    "titleBar.inactiveForeground": "#15202b99",
+    "statusBar.background": "#fdc42e",
+    "statusBarItem.hoverBackground": "#f6b302",
+    "statusBar.foreground": "#15202b"
+  },
+  "peacock.color": "#FDC42E"
 }
